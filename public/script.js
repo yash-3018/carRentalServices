@@ -18,7 +18,7 @@ $(document).ready(function(){
    console.log(car);
    console.log(car.location);
    $.ajax({
-      url: `https://maps.googleapis.com/maps/api/geocode/json?address=${car.location}&key=AIzaSyDUfag1Idgwyny6lSKNWne5UsLUj2uS8XA`,
+      url: `https://maps.googleapis.com/maps/api/geocode/json?address=${car.location}&key=YOUR_KEY`,
       type: 'POST',
       dataType: 'json',   
       processData: true,
