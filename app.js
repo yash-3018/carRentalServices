@@ -11,7 +11,7 @@ const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-acce
 const formidable=require('formidable');
 const socketIO=require('socket.io');
 const http=require('http');
-const stripe=require('stripe')('sk_test_51LFZVzSC8b5jesjZyEAsa7XEMumuwilI9o8NM0Ry4r0IbtrvW9MmYkEyTLNDMkkPQAWTjX179uWhc37HdNv2vvCT00tukuEBpc');
+const stripe=require('stripe')('YOUR_SK_KEY');
 
 const app=express();
 
