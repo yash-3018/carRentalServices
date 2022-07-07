@@ -208,13 +208,13 @@ app.get('/loginErrors',(req,res)=>{
     });
 });
 
-app.get('/listcar',requireLogin,(req,res)=>{
-    res.render('listcar',{
+app.get('/listCar',requireLogin,(req,res)=>{
+    res.render('listCar',{
         title: 'Listing'
     });
 });
 
-app.post('/listcar',requireLogin,(req,res)=>{
+app.post('/listCar',requireLogin,(req,res)=>{
     const newCar={
         owner: req.user._id,
         make: req.body.make,
